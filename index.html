@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+<div class="row pt-4">
+    <img src="git-logo.png" alt="" class="col-3" style="width:75px">
+    <h1 class="col-auto text-center">Configuring Git Discussion</h1>
+</div>
+    <ol>
+        <li>Go to VS code and click terminal --> <strong>New Terminal</strong></li>
+        <li>Check if git is already installed by typing <strong>git --version</strong> in the command line</li>
+        <li>Configure git in your local computer
+            <ul>
+                <li>Set your username:<br><strong>git config --global user.name "your name"</strong></li>
+                <li>Set your email address :<br><strong>git config --global user.email "your email address"</strong></li>
+            </ul>
+        </li>
+        <li>To initialize the project directory type <strong>git init</strong></li>
+
+    </ol>
+    <h2>Git add and coomit</h2>
+    <ol>
+        <li>To see the status of the file in you directory type <strong>git status</strong></li>
+        <li>to track new file use the command <strong>git add</strong>:<br>
+        Syntax: <br><strong>git add .</strong>(to add groupu of file) <br><strong>git add filename</strong>(for individual file)</li>
+        <li>By running the git status again you can see the  <a href="gitstaging.html">stage files</a>  in green by tyoing <br>Syntax: <br><strong>git commit -m "message for the developers"</strong></li>
+    </ol>
+    <div>
+        <a href="github.html" class="btn btn-primary">Create New Repository</a>
+
+        <h2>Git Branches</h2>
+        <img src="dog.jpg" alt="" width="100px"> <br>
+        <p>Git branch is new version of the repository. It allows you to work on different part of the project without intacting the main branch</p>
+        <ol>
+            <li>To list branch/es type: <strong>git branch</strong></li>
+            <li>
+                To create new branch <strong>git branch new-name</strong>
+            </li>
+            <li>To switch on a new branch <strong>git checkout branch-name</strong></li>
+        </ol>
+    </div>
+
+    <h2>Create hotfixes Branches</h2>
+    <p>TO create a new branches to deal with hotfixes without messing the with master branch directly type <strong>git checkout -b new-branch-name</strong></p>
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
